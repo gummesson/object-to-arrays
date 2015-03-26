@@ -1,0 +1,35 @@
+{
+  "name": "object-to-arrays",
+  "version": "1.0.0",
+  "description": "Transform an object into nested arrays.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/object-to-arrays.git"
+  },
+  "keywords": [
+    "object",
+    "array",
+    "arrays",
+    "nested"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/object-to-arrays/issues"
+  },
+  "homepage": "https://github.com/gummesson/object-to-arrays",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "covert": "^1.0.1",
+    "smokestack": "^3.2.1",
+    "tap-closer": "^1.0.0",
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "node test/",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "test:cover": "covert test/"
+  }
+}
